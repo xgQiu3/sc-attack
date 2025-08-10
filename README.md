@@ -66,3 +66,6 @@ As for the black-box attack, run:
 ```
 CUDA_VISIBLE_DEVICES='x' python main.py --surrogate_model_1 your/white_box/model --target_model your/black_box/model
 ```
+
+# Acknowledgements
+Thank the open-source community for their support and contributions to [PointBERT](https://github.com/Julie-tang00/Point-BERT) and [SI](https://github.com/shikiw/SI-Adv).
