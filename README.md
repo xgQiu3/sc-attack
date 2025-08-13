@@ -39,6 +39,7 @@ data (root)
 
 The dataset - related files are located within [data_utils](https://github.com/xgQiu3/sc-attack/blob/main/data_utils) and you can select specific classes as needed. As for ModelNet40, you can set category='x'. For ShapeNetPart, set class_choice=['x']
 
+<p align="center"><img width="100%" src="results/diffusion.png" /></p>
 
 ### Pretrained Models
 You can download the following [victim models](https://drive.google.com/file/d/1L25i0l6L_b1Vw504WQR8-Z0oh2FJA0G9/view?usp=sharing) and unzip them at ./checkpoint:
@@ -55,7 +56,6 @@ You can download the following [victim models](https://drive.google.com/file/d/1
 and the [Transformer](https://github.com/Julie-tang00/Point-BERT).
 The model configs are located within [attention](https://github.com/xgQiu3/sc-attack/tree/main/attention) and the recognition model utils are located within [model/classifier](https://github.com/xgQiu3/sc-attack/tree/main/model/classifier).
 
-<p align="center"><img width="100%" src="results/diffusion.png" /></p>
 <p align="center"><img width="100%" src="results/attention.png" /></p>
 
 ### Attacking and testing
@@ -71,4 +71,5 @@ CUDA_VISIBLE_DEVICES='x' python main.py --surrogate_model_1 your/white_box/model
 
 # Acknowledgements
 Thank the open-source community for their support and contributions to [PointBERT](https://github.com/Julie-tang00/Point-BERT) and [SI](https://github.com/shikiw/SI-Adv).
+
 
