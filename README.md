@@ -56,6 +56,8 @@ You can download the following [victim models](https://drive.google.com/file/d/1
 and the [Transformer](https://github.com/Julie-tang00/Point-BERT).
 The model configs are located within [attention](https://github.com/xgQiu3/sc-attack/tree/main/attention) and the recognition model utils are located within [model/classifier](https://github.com/xgQiu3/sc-attack/tree/main/model/classifier).
 
+**Note**: The diffusion model pre-trained on ModelNet40 will be uploaded soon.
+
 <p align="center"><img width="100%" src="results/attention.png" /></p>
 
 ### Attacking and testing
@@ -72,6 +74,7 @@ CUDA_VISIBLE_DEVICES='x' python main.py --surrogate_model_1 your/white_box/model
 
 # Acknowledgements
 Thank the open-source community for their support and contributions to [PointBERT](https://github.com/Julie-tang00/Point-BERT) and [SI](https://github.com/shikiw/SI-Adv).
+
 
 
 
