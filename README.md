@@ -1,5 +1,7 @@
 # Shape-Consistent Attack
 
+**Note**: The diffusion model pre-trained on ModelNet40 will be uploaded soon.
+
 <p align="center"><img width="100%" src="teaser.png" /></p>
 
 ## Installation
@@ -77,6 +79,7 @@ CUDA_VISIBLE_DEVICES='x' python main.py --surrogate_model_1 your/white_box/model
 
 # Acknowledgements
 Thank the open-source community for their support and contributions to [PointBERT](https://github.com/Julie-tang00/Point-BERT) and [SI](https://github.com/shikiw/SI-Adv).
+
 
 
 
