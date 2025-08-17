@@ -1,11 +1,5 @@
 # Shape-Consistent Attack
 
-**Note**: The diffusion model pre-trained on ModelNet40 will be uploaded soon!
-
-**Note**: The diffusion model pre-trained on ModelNet40 will be uploaded soon!
-
-**Note**: The diffusion model pre-trained on ModelNet40 will be uploaded soon!
-
 <p align="center"><img width="100%" src="teaser.png" /></p>
 
 ## Installation
@@ -20,6 +14,12 @@ The code is tested with Python3.7, Pytorch == 1.8.0 and CUDA == 11.1
 conda create --name sc python=3.7
 conda activate sc
 pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+For [PyTorch3D](https://anaconda.org/pytorch3d/pytorch3d/files?version=0.7.0), we strongly recommend that you download it manually to avoid various issues related to environment incompatibility.
+<p align="left"><img width="50%" src="pytorch3d.png" /></p>
+
+```
+conda install pytorch3d-0.7.0-py37_cu111_pyt180.tar.bz2
 pip install -r requirements.txt
 ```
 
@@ -44,7 +44,7 @@ data (root)
 
 The dataset - related files are located within [data_utils](https://github.com/xgQiu3/sc-attack/blob/main/data_utils) and you can select specific classes as needed. As for ModelNet40, you can set category='x'. For ShapeNetPart, set class_choice=['x']
 
-<p align="center"><img width="100%" src="results/diffusion.png" /></p>
+<p align="center"><img width="60%" src="results/diffusion.png" /></p>
 
 ### Pretrained Models
 You can download the following [victim models](https://drive.google.com/file/d/1L25i0l6L_b1Vw504WQR8-Z0oh2FJA0G9/view?usp=sharing) and unzip them at ./checkpoint:
@@ -77,6 +77,7 @@ CUDA_VISIBLE_DEVICES='x' python main.py --surrogate_model_1 your/white_box/model
 
 # Acknowledgements
 Thank the open-source community for their support and contributions to [PointBERT](https://github.com/Julie-tang00/Point-BERT) and [SI](https://github.com/shikiw/SI-Adv).
+
 
 
 
