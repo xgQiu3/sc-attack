@@ -20,7 +20,6 @@ The code is tested with Python3.7, Pytorch == 1.8.0 and CUDA == 11.1
 conda create --name sc python=3.7
 conda activate sc
 pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
-pip install spconv-cu113
 pip install -r requirements.txt
 ```
 
@@ -78,6 +77,7 @@ CUDA_VISIBLE_DEVICES='x' python main.py --surrogate_model_1 your/white_box/model
 
 # Acknowledgements
 Thank the open-source community for their support and contributions to [PointBERT](https://github.com/Julie-tang00/Point-BERT) and [SI](https://github.com/shikiw/SI-Adv).
+
 
 
 
